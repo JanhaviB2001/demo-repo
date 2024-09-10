@@ -6,4 +6,4 @@ SELECT
     CAST(engage_date AS DATE) AS engage_date,                
     CAST(close_date AS DATE) AS close_date,                  
     CAST(close_value AS DECIMAL(15, 2)) AS close_value       
-FROM {{ source('crm_sales', 'raw') }}
+FROM {{ source('crm_sales', 'sales_pipeline') }}

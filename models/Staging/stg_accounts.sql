@@ -6,5 +6,5 @@ SELECT
         CAST(EMPLOYEES AS INT) AS employees,
         OFFICE_LOCATION,
         SUBSIDIARY_OF
-    FROM 
-        {{ source('crm_sales', 'raw') }}
+FROM 
+        {{ source('crm_sales', 'accounts') }}
